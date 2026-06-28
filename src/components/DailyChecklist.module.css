@@ -1,0 +1,72 @@
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 4px;
+}
+
+.sectionIcon {
+  font-size: 18px;
+}
+
+.sectionTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sectionTime {
+  margin-left: auto;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+}
+
+.timeSep {
+  color: var(--text-muted);
+  margin: 0 1px;
+}
+
+.sectionPct {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-variant-numeric: tabular-nums;
+}
+
+.pctGood {
+  background: var(--accent-blue-dim);
+  color: var(--accent-blue);
+}
+
+.pctWarn {
+  background: var(--accent-red-dim);
+  color: var(--accent-red);
+}
+
+.pctEmpty {
+  background: transparent;
+  color: var(--text-muted);
+}
+
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}

@@ -1,0 +1,112 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dateNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+.arrowBtn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: var(--text-secondary);
+  background: var(--bg-card);
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  transition: all 0.2s;
+}
+
+.arrowBtn:hover {
+  background: var(--bg-card-hover);
+  color: var(--text-primary);
+}
+
+.dateDisplay {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dateMain {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.weekendBadge {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: var(--accent-orange);
+  color: #000;
+  font-weight: 700;
+}
+
+.todayBtn {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  background: var(--accent-blue-dim);
+  color: var(--accent-blue);
+  font-weight: 600;
+}
+
+.progressSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 0;
+}
+
+.progressRing {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.ringSvg {
+  width: 100%;
+  height: 100%;
+}
+
+.ringText {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ringPct {
+  font-size: 36px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.ringPercent {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-top: 8px;
+}
+
+.progressInfo {
+  font-size: 14px;
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+}
+
+.loadingText {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 40px;
+}

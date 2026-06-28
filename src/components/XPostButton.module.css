@@ -1,0 +1,56 @@
+.container {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+
+.preview {
+  font-size: 13px;
+  color: var(--text-secondary);
+  white-space: pre-wrap;
+  line-height: 1.6;
+  padding: 12px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-sm);
+  margin-bottom: 12px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.copyBtn,
+.postBtn {
+  flex: 1;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.copyBtn {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+}
+
+.copyBtn:hover {
+  background: var(--bg-card-hover);
+}
+
+.postBtn {
+  background: var(--accent-blue);
+  color: white;
+}
+
+.postBtn:hover {
+  opacity: 0.9;
+}
+
+.postBtn:active,
+.copyBtn:active {
+  transform: scale(0.97);
+}

@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+}
+
+.flame {
+  font-size: 28px;
+}
+
+.count {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--accent-orange);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.label {
+  font-size: 14px;
+  color: var(--text-secondary);
+  font-weight: 600;
+}

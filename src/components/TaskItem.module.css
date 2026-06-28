@@ -1,0 +1,183 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  padding: 14px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  transition: all 0.2s;
+  color: var(--text-primary);
+}
+
+.achieved {
+  border-color: var(--accent-blue);
+  background: var(--accent-blue-dim);
+}
+
+.partial {
+  border-color: var(--accent-orange);
+  background: rgba(245, 158, 11, 0.08);
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+  flex: 1;
+}
+
+.nameRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.slot {
+  font-size: 11px;
+  color: var(--text-muted);
+  background: var(--bg-secondary);
+  padding: 1px 6px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.targetRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.target {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.shared {
+  font-size: 10px;
+  color: var(--accent-orange);
+  background: rgba(245, 158, 11, 0.12);
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.weekendInfo {
+  font-size: 11px;
+  color: var(--accent-blue);
+  font-weight: 600;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.editGroup {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.minuteInput {
+  width: 56px;
+  padding: 6px 8px;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 2px solid var(--accent-blue);
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  -moz-appearance: textfield;
+}
+
+.minuteInput::-webkit-outer-spin-button,
+.minuteInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.unitLabel {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.minuteDisplay {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;
+  padding: 6px 10px;
+  background: var(--bg-secondary);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+  border: 1px solid var(--border);
+}
+
+.minuteDisplay:hover {
+  background: var(--bg-card-hover);
+}
+
+.minuteDisplay:active {
+  transform: scale(0.97);
+}
+
+.minuteValue {
+  font-size: 22px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  min-width: 28px;
+  text-align: center;
+}
+
+.valueGood {
+  color: var(--accent-blue);
+}
+
+.valuePartial {
+  color: var(--accent-orange);
+}
+
+.valueEmpty {
+  color: var(--text-muted);
+}
+
+.minuteUnit {
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.pctBadge {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 7px;
+  border-radius: 6px;
+  font-variant-numeric: tabular-nums;
+  min-width: 42px;
+  text-align: center;
+}
+
+.badgeGood {
+  background: var(--accent-blue-dim);
+  color: var(--accent-blue);
+}
+
+.badgeWarn {
+  background: var(--accent-red-dim);
+  color: var(--accent-red);
+}
