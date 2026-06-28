@@ -6,7 +6,7 @@ import { SettingsPage } from './pages/SettingsPage'
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/routine-tracker">
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<TodayPage />} />
